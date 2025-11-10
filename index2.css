@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+.main-header{
+    background-color: #75a7dd;
+    width: 800px;
+    border: 1px solid;
+    
+    padding: 15px 20px;
+    margin: 40px auto;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main-header h1{
+    text-align: left;
+    font-style: italic;
+    font-size: large;
+    
+    margin: 0;
+}
+.photo{
+    text-align: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+}
+.passport-photo {
+    border: 1px solid #0b0808;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    
+}
+.main-nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    
+}
+.main-nav a{
+    padding-left: 30px;
+    padding-top: 5px;
+    
+}
+.main-nav a:hover{
+    background-color: rgb(123, 185, 223);
+    border-radius: 4px;
+}
+.container2{
+    width: 800px;
+    border: 1px solid;
+    padding-left: 10px;
+    padding: 20px;
+    margin: 40px auto;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+    gap: 20px;
+    justify-items: center;
+}
+
+
+.school-box {
+    border: 1px solid #040404;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: #e6f2ff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    width: 90%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.school-box p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+.school-box p:first-child {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+
+.table3{
+    width: 800px;
+    border: 1px solid;
+    padding-left: 10px;
+    padding: 20px;
+    margin: 40px auto;
+    background-color: #a3caf5;
+}
+.table3 p{
+    font-size: medium;
+    
+    text-align: left;
+    
+    
+}
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 1.5em;
+    }
+
+    .wrapper {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .photo {
+        margin-right: 0;
+        margin-bottom: 15px; 
+    }
+
+    .student {
+        text-align: center;
+    }
+
+    .main-nav ul {
+        flex-direction: column; 
+        gap: 10px;
+        margin-top: 10px;
+        justify-content: center; 
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+
+@media (max-width: 480px) {
+    .main-header h1 {
+        font-size: 1.2em;
+    }
+
+    .main-nav a {
+        padding: 8px 15px; 
+        display: block; 
+    }
+
+    .grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .section {
+        padding: 15px;
+    }
+}
